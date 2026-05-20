@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Now | HexaGO</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        navy: { 800: '#0B132B', 900: '#050A15' },
+                        cyan: { 400: '#00E5FF', 500: '#00B8D4' }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050A15; }
+        ::-webkit-scrollbar-thumb { background: #00E5FF; border-radius: 4px; }
+        .logo-img { height: 40px; width: auto; object-fit: contain; }
+    </style>
+</head>
+<body class="bg-navy-900 text-gray-100 font-sans antialiased selection:bg-cyan-400 selection:text-navy-900 min-h-screen flex flex-col">
+
+    <header class="w-full bg-navy-900/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="flex items-center gap-3 group">
+                        <img src="logo.png" alt="HexaGO Logo" class="logo-img group-hover:scale-105 transition-transform">
+                        <span class="font-bold text-2xl tracking-wide text-white">Hexa<span class="text-cyan-400">GO</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="index.html" class="text-sm font-semibold hover:text-cyan-400 transition-colors">← Back to Site</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-20 px-6 relative overflow-hidden">
+        
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-2xl w-full relative z-10">
+            <div class="bg-navy-800 border border-gray-800 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-cyan-400/10 rounded-full flex items-center justify-center mb-10 mx-auto">
+                        <i class="fa-solid fa-briefcase text-4xl text-cyan-400"></i>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Join HexaGO Team</h1>
+                    <p class="text-lg text-gray-400 mb-12 leading-relaxed">
+    Ready to make an impact? Click below to start your application with <span class="text-white font-bold">HexaGO</span> and take the next step in your career.
+</p>
+
+
+                    <div class="bg-navy-900/50 border border-gray-700 border-l-4 border-l-cyan-400 p-6 rounded-lg mb-12 text-left">
+                        <h4 class="font-bold text-white mb-3">Before you start:</h4>
+                        <ul class="text-sm text-gray-400 space-y-3">
+                            <li><i class="fa-solid fa-language text-cyan-400 mr-3"></i> Fill out the entire form in <span class="text-white font-semibold">English</span>.</li>
+                            <li><i class="fa-solid fa-address-card text-cyan-400 mr-3"></i> Double-check all contact and profile details.</li>
+                            <li><i class="fa-solid fa-paper-plane text-cyan-400 mr-3"></i> You will be redirected to our Google Form.</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfSEO7-_cxr8Kji3WVKfaCGw0UOB1pQgfM4_AIMxqa89ECRtA/viewform?usp=dialog" target="_blank" 
+                       class="flex items-center justify-center w-full py-5 text-xl font-bold text-navy-900 bg-cyan-400 rounded-2xl hover:bg-cyan-300 transition-all shadow-[0_0_30px_rgba(0,229,255,0.4)] transform hover:-translate-y-1.5 active:-translate-y-0.5">
+                        OPEN FORM
+                        <i class="fa-solid fa-arrow-up-right-from-square ml-4 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-navy-800 py-8 border-t border-gray-800 text-center">
+        <p class="text-gray-500 text-sm">© 2026 HexaGO. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
